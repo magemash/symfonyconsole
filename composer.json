@@ -1,0 +1,17 @@
+{
+  "name": "magemash/symfonyconsole",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Symfony console for Magento",
+  "homepage": "https://github.com/magemash/symfonyconsole",
+  "require": {
+    "php": ">=5.3"
+  },
+  "authors": [
+    {
+      "name": "Scott Pringle",
+      "email": "scott@getcommerce.com",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
