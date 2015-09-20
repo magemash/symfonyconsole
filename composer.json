@@ -13,5 +13,8 @@
       "email": "scott@getcommerce.com",
       "role": "Author/Maintainer"
     }
-  ]
+  ],
+  "autoload" : {
+    "psr-4": { "Symfonyconsole\\": "" }
+  }
 }
