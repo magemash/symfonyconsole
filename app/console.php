@@ -4,6 +4,9 @@ require_once 'app' . DIRECTORY_SEPARATOR . 'Mage.php';
 \Mage::app('admin');
 \Mage::app()->setCurrentStore(\Mage_Core_Model_App::ADMIN_STORE_ID);
 
+Mage::setIsDeveloperMode(true);
+Mage::init();
+
 use Symfony\Component\Console\Application;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Yaml\Parser;
