@@ -20,8 +20,10 @@ $yaml = new Parser();
 foreach ($finder as $file) {
     $content = $yaml->parse(file_get_contents($file));
 
-    foreach ($content['commands'] as $command) {
-        $console->add(new $command());
+    if (array_key_exists('commands', $content)) {
+        foreach ($content['commands'] as $command) {
+            $console->add(new $command());
+        }
     }
 }
 
